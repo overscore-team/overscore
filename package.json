@@ -68,7 +68,7 @@
     "src/**/*.js": [
       "node -v",
       "prettier --write",
-      "eslint --cache --fix --config .eslintrc.cjs"
+      "eslint --cache --fix --config .eslintrc.js"
     ]
   }
 }
