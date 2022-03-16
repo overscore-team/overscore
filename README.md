@@ -28,6 +28,7 @@
 
 0. 基础：babel 等转译工具
 1. 编码 + eslint + prettier
+*  jest 配置文件 jest.config.js 
 2. 测试用例编写
 3. git 提交 （gitflow + commitlint + husky）
 4. 发起 pr
