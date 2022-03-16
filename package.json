@@ -4,7 +4,6 @@
   "description": "",
   "private": false,
   "main": "dist/overscore.min.js",
-  "type": "module",
   "scripts": {
     "cz": "git cz",
     "test": "jest",
