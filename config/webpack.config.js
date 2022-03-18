@@ -8,7 +8,7 @@ module.exports = {
     filename: `${pkg.name}.min.js`,
     path: path.resolve(__dirname, '../dist'),
     library: `${pkg.name}`,
-    libraryTarget: 'umd',
+    libraryTarget: 'umd'
   },
   module: {
     rules: [
