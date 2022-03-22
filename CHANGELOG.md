@@ -1,3 +1,12 @@
+## [0.0.4](https://github.com/overscore-team/overscore/compare/v0.0.3...v0.0.4) (2022-03-22)
+
+
+### Bug Fixes
+
+* fix actions bugs ([c1b02df](https://github.com/overscore-team/overscore/commit/c1b02df0c2f86ca1397ac0bd40999d773cd08d25))
+
+
+
 ## [0.0.3](https://github.com/overscore-team/overscore/compare/v0.0.2...v0.0.3) (2022-03-22)
 
 
