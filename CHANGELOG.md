@@ -1,3 +1,7 @@
+## [0.0.8](https://github.com/overscore-team/overscore/compare/v0.0.7...v0.0.8) (2022-03-22)
+
+
+
 ## 0.0.7 (2022-03-22)
 
 
