@@ -1,3 +1,12 @@
+## [0.0.6](https://github.com/overscore-team/overscore/compare/v0.0.5...v0.0.6) (2022-03-22)
+
+
+### Bug Fixes
+
+* fix publish action bug ([9fff543](https://github.com/overscore-team/overscore/commit/9fff5434d25e3489c77e6a6d4de032d966ec26cb))
+
+
+
 ## 0.0.5 (2022-03-22)
 
 
