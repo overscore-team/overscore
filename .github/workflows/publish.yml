@@ -1,21 +1,26 @@
+name: Publish
+
 on:
   push:
     tags:
     - 'v*' # 仅在出现名为 v 字符开头的 tag 时，触发此任务，如 v1.2.1
-name: Publish
+
 jobs:
-  # test: # test 任务可选，视情况而定
-  #   run-on: ubuntu-latest
-  #   steps:
-  #   - uses: actions/checkout@v2
-  #   - uses: actions/setup-node@v1
-  #     with:
-  #       node-version: 14
-  #   - run: npm i
-  #   - run: npm test
+  test: # test 任务可选，视情况而定
+    run-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js 14
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14
+    - name: test
+      run: |
+        npm i
+        npm test
 
   publish:
-    # needs: test # 设置前置任务
+    needs: test # 设置前置任务
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
