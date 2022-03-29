@@ -1,3 +1,12 @@
+## [0.1.1](https://github.com/overscore-team/overscore/compare/v0.1.0...v0.1.1) (2022-03-29)
+
+
+### Bug Fixes
+
+* update publish.yml ([c30f250](https://github.com/overscore-team/overscore/commit/c30f2500de83de1fdbdf5ab6c856fdbbf877095b))
+
+
+
 # [0.1.0](https://github.com/overscore-team/overscore/compare/v0.0.9...v0.1.0) (2022-03-29)
 
 
