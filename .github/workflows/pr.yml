@@ -1,7 +1,7 @@
-name: Test
+name: Pull_Request
 
 on:
-  [push]
+  [pull_request]
 
 jobs:
   test: # test 任务可选，视情况而定

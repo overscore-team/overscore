@@ -21,7 +21,7 @@ jobs:
         npm i
         npm test
 
-  publish:
+  build:
     needs: test # 设置前置任务
     runs-on: ubuntu-latest
     steps:
@@ -30,10 +30,25 @@ jobs:
       with:
         node-version: 14
         registry-url: https://registry.npmjs.org/
-    - run: npm i
+    - run: npm ci
     - run: npm run build
+    - name: Archive production artifacts # 打包后动态生成的 dist/overscore.min.js 需要保存起来用于发布
+      uses: actions/upload-artifact@v3
+      with:
+        name: dist
+        path: dist
     # - run: npm pack
-    - run: npm publish # 如果发布之前需要构建，可添加 prepublishOnly 生命周期脚本
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download production artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: dist
+        path: dist
+    - run: npm publish
       env:
         NODE_AUTH_TOKEN: ${{secrets.OVERSCORE_PUBLISH_TOKEN}}
 
@@ -49,4 +64,4 @@ jobs:
     - run: npm i -g github-release-from-changelog
     - run: github-release-from-changelog
       env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        GITHUB_TOKEN: ${{secrets:GITHUB_TOKEN}}

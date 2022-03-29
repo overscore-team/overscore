@@ -18,6 +18,19 @@
     "type": "git",
     "url": "git+https://github.com/overscore-team/overscore.git"
   },
+  "files": [
+    ".bablerc",
+    ".browserlistrc",
+    ".eslintrc.js",
+    "prettier.config.js",
+    ".github",
+    "dist",
+    "src",
+    "config",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "overscore",
     "tools"
