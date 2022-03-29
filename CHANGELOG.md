@@ -1,3 +1,32 @@
+## 0.0.9 (2022-03-22)
+
+
+### Bug Fixes
+
+* fix actions bugs ([196073c](https://github.com/overscore-team/overscore/commit/196073c3fe5703d86a6d760e99525578b6c205ac))
+* fix publish action bug ([f333c49](https://github.com/overscore-team/overscore/commit/f333c494290f231965d355b47875a05ffbea7745))
+* **publish.yml:** fix publish workflow bug ([dd787a2](https://github.com/overscore-team/overscore/commit/dd787a2bce4f14f1d2a227e7e4ca38ed76fc154c))
+* rename filename ([eefe2f2](https://github.com/overscore-team/overscore/commit/eefe2f2315ce423869c9ab27e8b63f3db6b3dd7f))
+* update publish workflow to master branch ([393cb80](https://github.com/overscore-team/overscore/commit/393cb802228ed6852b44be0d14b9a2acfda52e52))
+* 修复基础CI ([1cec541](https://github.com/overscore-team/overscore/commit/1cec541159bd03d04cf297a554d4f656962172b2))
+
+
+### Features
+
+* init configs ([ada8eda](https://github.com/overscore-team/overscore/commit/ada8eda6474a27954fbea09fe0bdbc17673e2a92))
+* init configs ([dc48ced](https://github.com/overscore-team/overscore/commit/dc48ced4af3a2e1662d61e8af2a0d08337e4c61b))
+* init configs ([7c97f8c](https://github.com/overscore-team/overscore/commit/7c97f8c4f821dd7e2f939ee25e13673ebe298bd2))
+* init configs ([82206b7](https://github.com/overscore-team/overscore/commit/82206b72d4e14e0f51de407374948620f60e29b4))
+* test comma ([9b71cd4](https://github.com/overscore-team/overscore/commit/9b71cd416d7953f3ad503090ea468a6bc95d818a))
+* test comma ([89614d1](https://github.com/overscore-team/overscore/commit/89614d10c516c709d2f3496c08c93863e75fea2c))
+* test comma ([0d6780d](https://github.com/overscore-team/overscore/commit/0d6780d6a570e76da53b5add3b59e646730a29a9))
+* test comma ([f09dcaf](https://github.com/overscore-team/overscore/commit/f09dcafae4f3b277c9518beabcdf142f1ae4b043))
+* update readme ([c926893](https://github.com/overscore-team/overscore/commit/c926893709ce44d539cf18ecc7e67bbfba2638fa))
+* 更新基础配置 ([6357b65](https://github.com/overscore-team/overscore/commit/6357b656cc1cffdb5a0e2d0d86454367bb808f11))
+* 添加自动导入&实例模块及其单元测试 ([2ece68d](https://github.com/overscore-team/overscore/commit/2ece68dab17e202016863246d0ea29d42f5ae343))
+
+
+
 ## [0.0.8](https://github.com/overscore-team/overscore/compare/v0.0.7...v0.0.8) (2022-03-22)
 
 
