@@ -1,13 +1,14 @@
 const path = require('path')
 const pkg = require('../package.json')
+const packageName = pkg.name.split('/')[1]
 
 module.exports = {
   mode: 'production',
   entry: path.resolve(__dirname, '../src/index.js'),
   output: {
-    filename: `${pkg.name}.min.js`,
+    filename: `${packageName}.min.js`,
     path: path.resolve(__dirname, '../dist'),
-    library: `${pkg.name}`,
+    library: `${packageName}`,
     libraryTarget: 'umd'
   },
   module: {

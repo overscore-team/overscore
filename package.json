@@ -3,7 +3,7 @@
   "version": "0.0.8",
   "description": "",
   "private": false,
-  "main": "dist/overscore.min.js",
+  "main": "src/index.js",
   "scripts": {
     "cz": "git cz",
     "test": "jest",
