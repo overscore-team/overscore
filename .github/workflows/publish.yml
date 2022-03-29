@@ -48,6 +48,7 @@ jobs:
       with:
         node-version: 14
         registry-url: https://registry.npmjs.org/
+    - run: npm ci
     - name: Download production artifacts
       uses: actions/download-artifact@v3
       with:
