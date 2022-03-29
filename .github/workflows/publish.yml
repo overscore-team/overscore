@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Exit if not on master branch
-      if: endsWith(github.ref, 'master') == false
-      run: exit -1
+    # - name: Exit if not on master branch
+    #   if: endsWith(github.ref, 'master') == false
+    #   run: exit -1
     - name: Use Node.js 14
       uses: actions/setup-node@v1
       with:
