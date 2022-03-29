@@ -1,6 +1,6 @@
 {
   "name": "@overscore-team/overscore",
-  "version": "0.0.8",
+  "version": "0.1.5",
   "description": "",
   "private": false,
   "main": "dist/overscore.min.js",
@@ -18,6 +18,19 @@
     "type": "git",
     "url": "git+https://github.com/overscore-team/overscore.git"
   },
+  "files": [
+    ".bablerc",
+    ".browserlistrc",
+    ".eslintrc.js",
+    "prettier.config.js",
+    ".github",
+    "dist",
+    "src",
+    "config",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "overscore",
     "tools"

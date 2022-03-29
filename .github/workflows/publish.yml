@@ -2,16 +2,19 @@ name: Publish
 
 on:
   push:
-    branches:
-      - master
+    # branches:
+    #   - master
     tags:
-      - 'v*' # 仅在出现名为 v 字符开头的 tag 时，触发此任务，如 v1.2.1
+      - v* # 仅在出现名为 v 字符开头的 tag 时，触发此任务，如 v1.2.1
 
 jobs:
   test: # test 任务可选，视情况而定
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    # - name: Exit if not on master branch
+    #   if: endsWith(github.ref, 'master') == false
+    #   run: exit -1
     - name: Use Node.js 14
       uses: actions/setup-node@v1
       with:
@@ -43,6 +46,12 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 14
+        registry-url: https://registry.npmjs.org/
+    - run: npm ci
     - name: Download production artifacts
       uses: actions/download-artifact@v3
       with:
