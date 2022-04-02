@@ -9,7 +9,8 @@ module.exports = {
     filename: `${packageName}.min.js`,
     path: path.resolve(__dirname, '../dist'),
     library: `${packageName}`,
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
+    globalObject: 'this'
   },
   module: {
     rules: [
