@@ -11,17 +11,20 @@
 │   └── webpack.config.js
 ├── docs
 │   ├── architecture-design.jpg
-│   ├── technical-design-documentation.md
-│   └── tree.md
+│   └── technical-design-documentation.md
 ├── src
 │   ├── index.js
 │   └── modules
 │       ├── count
 │       │   └── add.js
+│       ├── fn
+│       │   └── index.js
 │       └── object
 │           └── index.js
 └── test
-    └── count
-        └── add.test.js
+    ├── count
+    │   └── add.test.js
+    └── fn
+        └── index.test.js
 
-8 directories, 16 files
+10 directories, 17 files
