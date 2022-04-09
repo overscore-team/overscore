@@ -1,15 +1,3 @@
-function debounce(fn, delay) {
-  let timer = null
-  return (...args) => {
-    if (timer) {
-      clearTimeout(timer)
-    }
-    timer = setTimeout(() => {
-      fn.apply(this, args)
-    }, delay)
-  }
-}
-
 function throttle(fn, delay) {
   let lastTime = 0
   let timer = null
@@ -38,7 +26,4 @@ function throttle(fn, delay) {
   }
 }
 
-module.exports = {
-  debounce,
-  throttle
-}
+module.exports = throttle
