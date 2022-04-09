@@ -1,38 +1,53 @@
-
-构建工具：webpack
-代码规范化：eslint + prettier + husky + git commit + commitlint
-兼容性：babel
-自动化测试：git actions + git hooks
+# overscore
 
 
-技术调研
-- 项目复杂度
-- 兼容性
-- 开发效率 webpack
-- 业务需求
-- 团队成员技术水平
 
-开发工具
-- vscode
-- webstorm
+前端工具库
 
-技术选型？
-
-团队管理
-- git 协同与提交规范：standard
-- 代码风格统一：eslint + prettier
-- 技能储备与学习：npm 包的导出
+> 以往接触的多个前端项目中，总是重复性的使用各种公共方法，我们可以根据日常业务开发中的这一需求，针对性的将一部分公共业务方法整合成前端工具库，以减少重复开发的成本，提高开发效率。
 
 
-工作流制定：
 
-0. 基础：babel 等转译工具
-1. 编码 + eslint + prettier
-*  jest 配置文件 jest.config.js 
-2. 测试用例编写
-3. git 提交 （gitflow + commitlint + husky）
-4. 发起 pr
-5. git actions 处理 pr，自动测试，测试通过的话，feature/xxx => develop
-6. 定时将 develop 稳定版合到 master 分支，git actions 自动打包构建， publish 到 npm
-7. tags ? release ? changelog ?
+## 安装使用
+
+1. 因为当前库使用 umd 规范打包构建，可以访问 [unpkg](https://unpkg.com/@overscore-team/overscore) 下载最新版本，直接在 html 文档中引用
+
+```html
+<script src="overscore.min.js"></script>
+<script>
+	var deepClone = overscore.deepClone
+</script>
+```
+
+
+
+2. 使用 npm 安装
+
+```shell
+npm i @overscore-team/overscore@latest -S-D
+```
+
+在项目中使用
+
+```js
+const { deepClone } = require('@overscore-team/overscore')
+```
+
+
+
+
+
+## API
+
+### Object
+
+- deepClone 深拷贝
+- mergeObject 合并对象
+- mergeArray 合并数组
+
+
+### fn
+
+- throttle 节流
+- debounce 防抖
 
