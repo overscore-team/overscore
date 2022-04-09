@@ -5,7 +5,9 @@ const modulesFiles = require.context('./modules', true, /^\.\/.+\/.+\.js$/)
 
 modulesFiles.keys().forEach((key) => {
   const moduleName = key.substring(key.lastIndexOf('/') + 1, key.lastIndexOf('.'))
-  overscore[moduleName] = modulesFiles(key)
+  if (!moduleName.startsWith('_')) {
+    overscore[moduleName] = modulesFiles(key)
+  }
 })
 
 module.exports = overscore
