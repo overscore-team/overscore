@@ -1,3 +1,28 @@
+## [0.1.7](https://github.com/overscore-team/overscore/compare/v0.1.5...v0.1.7) (2022-04-10)
+
+
+### Bug Fixes
+
+* **webpack.config.js:** fix global Object ([c4f7833](https://github.com/overscore-team/overscore/commit/c4f7833db28c66146c29c5ea3e8bc7948f443251))
+
+
+### Code Refactoring
+
+* **modules/fn;module/object;test:** fix module conflict ([349892d](https://github.com/overscore-team/overscore/commit/349892d703495d1ee039546ed11f8261ab59f504))
+
+
+### Features
+
+* **src/modules/fn/index.js;test/fn/index.test.js:** 功能函数防抖节流及其测试 ([01aae6c](https://github.com/overscore-team/overscore/commit/01aae6cd338322b9d559d13f2c6fcadfc48e07ac))
+* 新增对象合并函数 ([1236edd](https://github.com/overscore-team/overscore/commit/1236eddcbf56f5e1497afb9fcb1ce19a2a0ab60f))
+
+
+### BREAKING CHANGES
+
+* **modules/fn;module/object;test:** 模块下文件名即是导出的方法名,下划线开始的方法名无法以 api 的形式访问
+
+
+
 ## [0.1.6](https://github.com/overscore-team/overscore/compare/v0.1.5...v0.1.6) (2022-04-02)
 
 
