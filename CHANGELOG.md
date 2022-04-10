@@ -1,3 +1,16 @@
+## [0.1.9](https://github.com/overscore-team/overscore/compare/v0.1.8...v0.1.9) (2022-04-10)
+
+
+
+## [0.1.6](https://github.com/overscore-team/overscore/compare/v0.1.5...v0.1.6) (2022-04-02)
+
+
+### Bug Fixes
+
+* **webpack.config.js:** fix global Object ([837b092](https://github.com/overscore-team/overscore/commit/837b0926fb462c52c7aaf5814c07fefa558c3623))
+
+
+
 ## [0.1.8](https://github.com/overscore-team/overscore/compare/v0.1.7...v0.1.8) (2022-04-10)
 
 
