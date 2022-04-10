@@ -18,13 +18,24 @@
 │       ├── count
 │       │   └── add.js
 │       ├── fn
-│       │   └── index.js
+│       │   ├── _isArray.js
+│       │   ├── _isObject.js
+│       │   ├── _typeof.js
+│       │   ├── debounce.js
+│       │   └── throttle.js
 │       └── object
-│           └── index.js
+│           ├── deepClone.js
+│           ├── mergeArray.js
+│           └── mergeObject.js
 └── test
     ├── count
     │   └── add.test.js
-    └── fn
-        └── index.test.js
+    ├── fn
+    │   ├── debounce.test.js
+    │   └── throttle.test.js
+    └── object
+        ├── deepClone.test.js
+        ├── mergeArray.test.js
+        └── mergeObject.test.js
 
-10 directories, 17 files
+11 directories, 27 files

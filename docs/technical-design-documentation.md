@@ -46,11 +46,26 @@
    │   └── modules
    │       ├── count
    │       │   └── add.js
+   │       ├── fn
+   │       │   ├── _isArray.js
+   │       │   ├── _isObject.js
+   │       │   ├── _typeof.js
+   │       │   ├── debounce.js
+   │       │   └── throttle.js
    │       └── object
-   │           └── index.js
+   │           ├── deepClone.js
+   │           ├── mergeArray.js
+   │           └── mergeObject.js
    └── test
-      └── count
-         └── add.test.js
+      ├── count
+      │   └── add.test.js
+      ├── fn
+      │   ├── debounce.test.js
+      │   └── throttle.test.js
+      └── object
+         ├── deepClone.test.js
+         ├── mergeArray.test.js
+         └── mergeObject.test.js
    ```
 
 
@@ -104,5 +119,5 @@
    | github2npm | git action 中成功发布到 npm 的第一个可用版本 | https://github.com/overscore-team/overscore/pull/19 | chzhw  |
    | object     | object 模块完成                              | https://github.com/overscore-team/overscore/pull/20 | xdh    |
    | fn         | fn 模块完成                                  | https://github.com/overscore-team/overscore/pull/21 | zhk    |
-   | finish     | 项目完成                                     |                                                     | chzhw  |
+   | finish     | 项目完成                                     | https://github.com/overscore-team/overscore/pull/26 | chzhw  |
 
